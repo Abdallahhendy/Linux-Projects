@@ -1,0 +1,14 @@
+
+# First, make the scripts executable
+sudo chmod +x /Linux-backup-system/scripts/*
+
+#### After that customize the schedule as you want
+sudo crontab -e
+### Write the following into it, every day at 2 AM, execute this script
+## DAILY
+0 2 * * * ../scripts/direct_bak.sh
+
+## WEEKLY
+
+
+
