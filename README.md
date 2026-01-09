@@ -26,7 +26,7 @@ The project arch will be like that
 - `gpg`
 - `crontab`
 
-##### Steps That I Made
+##### Setup Steps
 1. Create the `/data` for testing purpose, and put some folders into it.
 2. Create the `/backup` and organize it into dailly, weekly, and logs.
 3. Change the owner of both directories to be the **root**, security concerns
@@ -35,6 +35,12 @@ The project arch will be like that
 6. Write your automated scripts for the **daily and weekly** backups
 7. Make them executable
 8. Automate the task with `crontab -e`
+
+#### Lesson Learned
+1. Backup not just copying files, it involves automation, security, validation, etc.
+2. Dealing with the `rsync` tool, it's an awsome tool for incremental files transfering.
+3. Automate the repeated tasks with scripts to ease the maintainece and reduce error handling.
+4. Apply the permissions correctly, on the data and the backup.
 
 #### Go Further
 - Email Alerts (on failure)
